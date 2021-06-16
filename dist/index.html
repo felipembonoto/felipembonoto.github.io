@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Consuat2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>   
+  <button type="button" id="gerarPDF">Gerar PDF</button>
+  
+<!--     <button type="button" id="gerarPDF" onclick="gerarPDF()">Gerar PDF</button> -->
+  <header>
+<table style="width:100%">
+        <thead>
+          
+            <tr>
+                <th>Curso</th>
+                <th>
+                  <select id="cursos" name="cursos">
+  <option value="NR10">NR10</option>
+  <option value="NR11">NR11</option>
+  <option value="NR18">NR18</option>
+  <option value="NR20">NR20</option>
+  <option value="NR12">NR12</option>   
+  <option value="NR33">NR33</option>
+  <option value="NR34">NR34</option>
+  <option value="NR35">NR35</option>
+  <option value="SEP">SEP</option>
+  <option value="Sup NR33">Sup NR33</option> 
+                  </select> 
+                </th>
+            </tr>
+          
+        </thead>
+      
+        <tbody id="instrutores">
+          <tr>
+            <td>Instrutor</td>
+            <td><select name="instrutoresLista">
+  <option value="Felipe Bonoto">Felipe Bonoto</option>
+  <option value="Clayton">Clayton</option>
+  <option value="Mariana">Mariana</option>
+              </select>
+          </tr>
+          <tr>
+            <td>Empresa</td>
+            <td> <input name="empresa[]"></td>
+
+          
+          </tbody>
+        <tr></tr>
+
+    <tbody id="data">
+        <tr>
+              <td>Data</td>
+            <th><input name="date[]" type="date"></th>
+        </tr>
+  </tbody>
+        <tr>
+          <th>Nome</th>
+          <th>RG</th>
+          <th>CPF</th>
+        </tr>
+        <tbody id="funcionarios">
+        <tr>
+
+          <td> <input name="nome[]"> </td>
+          <td> <input name="RG[]"> </td>
+          <td> <input name="CPF[]"> </td>
+
+        </tr>
+       </tbody>
+   </header>
+    <div id="adicionarColaborador"></div>
+            <button class="add_button" type="button" id="adicionarColaborador">Add Colaborador</button>
+    </div>
+      <div id="adicionarData"></div>
+            <button class="add_button_data" type="button" id="adicionarData">Add Data</button>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+  </section>   
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
